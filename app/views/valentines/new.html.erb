@@ -1,0 +1,11 @@
+<%= form_for @valentine do |f| %>
+
+<%= f.label "From:" %>
+<%= f.text_field :from %>
+
+<%= f.label "Message" %>
+<%= f.text_field :message %>
+
+<%= f.submit "Send the Love" %>
+
+<% end %>
