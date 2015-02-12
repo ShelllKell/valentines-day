@@ -1,11 +1,30 @@
-<%= form_for @valentine do |f| %>
+<div class='form'>
+  <%= form_for @valentine do |f| %>
 
-<%= f.label "From:" %>
-<%= f.text_field :from %>
+  <div class='from'>
+    <%= f.label "From" %>
+  </div>
 
-<%= f.label "Message" %>
-<%= f.text_field :message %>
 
-<%= f.submit "Send the Love" %>
+  <div class='from-text'>
+    <%= f.text_field :from %>
+  </div>
 
-<% end %>
+
+  <div class='message'>
+    <%= f.label "Message" %>
+  </div>
+
+
+  <div class='message-text'>
+    <%= f.text_area :message, height: "76", width: "182" %>
+  </div>
+
+    <br>
+
+  <div class='button'>
+    <%= f.submit "Send the Love" %>
+  </div>
+
+  <% end %>
+</div>

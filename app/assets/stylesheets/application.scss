@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+//
+// body {
+//   background-image: url('hearts.jpg');
+//   background-repeat: no-repeat;
+//   background-position: fixed;
+// }
+
+
+html {
+  background: url(hearts.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  cursor: url(heart.jpg), default;
+
+}
+
+h1 {
+  color:black;
+  font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+  font-size: 40pt;
+}
+
+.welcome {
+  padding-left: 23rem;
+  padding-top: 5rem;
+}
+
+.link {
+
+    color:black;
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    font-size: 20pt;
+    padding-left: 21rem;
+    padding-top: 26rem;
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: red;
+    font-style: italic;
+  }
+}
+
+.from {
+  padding-left: 27rem;
+  padding-top: 4rem;
+  font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+  font-size: 36pt;
+}
+
+.from-text {
+  padding-left: 25rem;
+  padding-top: 2rem;
+  font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+}
+
+.message {
+  padding-left: 25rem;
+  padding-top: 8rem;
+  font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+  font-size: 36pt;
+}
+
+.message-text {
+  padding-left: 25rem;
+  padding-top: 3rem;
+  font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+}
+
+.button {
+  padding-left: 28rem;
+  font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+}
+
+#valentine_message {
+  height: 76px;
+  width: 182px;
+}
+
+#valentine_from {
+  height: 24px;
+  width: 182px;
+}
